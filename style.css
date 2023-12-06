@@ -7,12 +7,11 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   padding: 1rem;
-  
 }
 
-div{
-    display: flex;
-    flex-direction: column;
+div {
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   font-family: "Norse bold";
@@ -21,17 +20,34 @@ h1 {
 div p {
   font-weight: bold;
 }
+/* _________________________________________________ */
 fieldset {
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 form {
+  display: flex;
+  gap: 10rem;
   padding: 1rem;
+font-size: 10px;
 }
-input{
-    border: 1px solid black;
-    border-radius: 4px;
+input {
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
+#left_side {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+gap: 0.5rem;
+}
 
-
+#right_side {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline-flex;
+  gap: 0.5rem;
+}
